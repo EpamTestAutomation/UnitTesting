@@ -1,10 +1,10 @@
 // Define a class named NumbersValidator
 export class NumbersValidator {
     /**
-   * Method to check if a number is even
-   * @param {Number} number - The number to be checked
-   * @return {Boolean} - Returns true if the number is even, false otherwise
-   */
+     * Method to check if a number is even
+     * @param {Number} number - The number to be checked
+     * @return {Boolean} - Returns true if the number is even, false otherwise
+     */
     isNumberEven(number) {
     // Determine the type of the passed argument
         const typeOfVariable = typeof number;
@@ -18,11 +18,11 @@ export class NumbersValidator {
     }
 
     /**
-   *  Method to extract even numbers from an array
-   * @param {Array<Number>} arrayOfNumbers - The array containing numbers to be checked
-   * @return {Array<Number>} - An array of even numbers
-   * @throws {Error} - Throws an error if the input is not an array of numbers
-   */
+     *  Method to extract even numbers from an array
+     * @param {Array<Number>} arrayOfNumbers - The array containing numbers to be checked
+     * @return {Array<Number>} - An array of even numbers
+     * @throws {Error} - Throws an error if the input is not an array of numbers
+     */
     getEvenNumbersFromArray(arrayOfNumbers) {
     // Check if the input is an array and if every item is of type number
         if (Array.isArray(arrayOfNumbers) && arrayOfNumbers.every((item) => typeof item === 'number')) {
@@ -34,11 +34,11 @@ export class NumbersValidator {
     }
 
     /**
-  * Method to check if all elements in an array are numbers
-  * @param {Array<Number>} arrayOfNumbers - The array to be checked
-  * @return {Boolean} - Returns true if all elements are numbers, false otherwise
-  * @throws {Error} - Throws an error if the input is not an array
-  */
+     * Method to check if all elements in an array are numbers
+     * @param {Array<Number>} arrayOfNumbers - The array to be checked
+     * @return {Boolean} - Returns true if all elements are numbers, false otherwise
+     * @throws {Error} - Throws an error if the input is not an array
+     */
     isAllNumbers(arrayOfNumbers) {
     // Check if the argument is an array
         if (!Array.isArray(arrayOfNumbers)) {
@@ -49,11 +49,11 @@ export class NumbersValidator {
     }
 
     /**
-  * Method to check if a value is an integer
-  * @param {Number} n - The value to be checked
-  * @return {Boolean} - Returns true if the value is an integer, false otherwise
-  * @throws {Error} - Throws an error if the input is not a number
-  */
+     * Method to check if a value is an integer
+     * @param {Number} n - The value to be checked
+     * @return {Boolean} - true if value is integer
+     * @throws {Error} - Throws an error if the input is not a number
+     */
     isInteger(n) {
     // If the type of n is not number, throw an error
         if (typeof n !== 'number') {
